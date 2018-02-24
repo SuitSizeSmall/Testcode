@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <meta charset="UTF-8">
+    
+    <title>PoELab</title>
+    
+                                                          
+</head>
+    
+<body>
+
+  <!-- Main navigation bar --> 
+ <div class="navbar">
+  <a href="index.html">Home</a>
+     
+  <div class="dropdown">
+     <button class="dropbtn">Layouts &or;
+     </button>
+     <div class="dropdown-content">
+        <a href="">Normal lab notes</a>
+        <a href="">Cruel lab notes</a>
+        <a href="">Merciless lab notes</a>
+        <a href="notes.html">Uber lab notes</a>
+     </div> 
+   </div>
+  
+     <div class="dropdown">
+    <button class="dropbtn">Labyrith guides &or;
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Izaro and his phases</a>
+      <a href="#">Gauntlets, puzzles and their solutions </a>
+      <a href="#">Hidden darkshrines</a>
+      <a href="">Traps and trials</a>
+      <a href="">Useful items</a>
+      <a href="">What makes a "good" labyrinth?</a>
+    </div>
+  </div> 
+     
+     
+  <div class="dropdown">
+    <button class="dropbtn">Services &or;
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Lab carry services</a>
+      <a href="#">Enchant requrests [WTB] </a>
+      <a href="#">Shaper carry services</a>
+      <a href="">Atziri carry services</a>
+    </div>
+  </div> 
+     
+    <a href="">Useful links</a>
+     
+     <div class="dropdown">
+    <button class="dropbtn">More &or;
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Support us</a>
+      <a href="#">Patreon supporters</a>
+      <a href="#">Trial tracker</a>
+      <a href="">PoElab team</a>
+      <a href="">Contact/feedback</a>
+      <a href="">Privacy policy</a>
+    </div>
+  </div> 
+     
+ 
+  <a id="patreon" href="#">Patreon</a>
+     
+</div>
+     
+ 
+<h1 class="logo"><a href="index.html"><img src="http://www.poelab.com/wp-content/uploads/2016/11/cropped-cropped-logo1-Copy-1-e1483196126448.jpg"/></a></h1>
+    
+    
+    
+    
+    <!-- side navigation bar --> 
+    
+<div class="sidenav" style="right:0;">
+    <h4>Quicklinks</h4>
+    <a href="">How to get maximum keys</a>
+    <a href="">Izaro and his phases</a>
+    <a href="">Traps, gauntlets and their solutions</a>
+    <a href="">Hidden darkshrines</a>
+        
+</div>
+    
+<div class="ad_right" style="right:0;">
+    
+    <p>Ad spot or whitelist message <br> second line of text for testing</p>
+    
+</div>
+    
+    
+    <!-- page content -->
+    
+<div class="main_notes" >
+    
+    <!-- date script -->
+    <p id="date"></p>
+    <script>   
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var n = new Date();
+        var y = n.getFullYear();
+        var m = n.getMonth();
+        var d = n.getDate();
+        document.getElementById("date").innerHTML = d + " " + months[m] + " " + y; 
+    </script>
+  
+
+    
+    <img id="myImg" src=" http://www.poelab.com/wp-content/uploads/2018/02/2018-02-24_uber.jpg" alt="Uber lab notes" width="900"/>
+   
+            <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption">Uber lab notes</div>
+
+        </div>
+    
+ 
+        <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('myImg');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+        </script>
+        
+</div>
+
+<div class="banner">
+ <p>Ad spot or whitelist message <br> second line of text for testing </p>    
+</div>
+    
+<div class="file">
+<a href="http://www.poelab.com/wp-content/labfiles/uber.json" download="uber.json">Lab Compass File</a>
+</div>
+    
+</body>
+    
+</html>
